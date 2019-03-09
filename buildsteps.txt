@@ -2,7 +2,9 @@ ng build --prod
 
 ng test
 
-tar -zcvf archive_name.tar.gz full_path/dist/packages-dist
+move full_path/dist/packages-dist/* into full_path/dist/packages-dist/package
+
+tar -zcvf archive_name.tar.gz package
 
 upload to github
 
