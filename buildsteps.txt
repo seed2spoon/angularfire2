@@ -1,0 +1,9 @@
+ng build --prod
+
+ng test
+
+tar -zcvf archive_name.tar.gz full_path/dist/packages-dist
+
+upload to github
+
+npm install path_to_tar_gz

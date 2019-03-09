@@ -75,4 +75,8 @@ export class AngularFireAuth {
     }));
   }
 
+  public emailAuthProviderCredential(email: string, password: string): auth.AuthCredential  {
+    return auth.EmailAuthProvider.credential(email, password);
+  }
+
 }
